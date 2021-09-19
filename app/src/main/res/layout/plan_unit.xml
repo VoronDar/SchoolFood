@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop = "8dp"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id = "@+id/more_details"
+        android:src = "@drawable/ic_icon_arrow"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        style="@style/block_title"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:text="Понедельник"
+        app:layout_constraintTop_toTopOf="@id/more_details"
+        app:layout_constraintBottom_toBottomOf="@id/more_details"
+        app:layout_constraintStart_toEndOf="@id/more_details"
+        />
+
+
+        <ImageView
+            android:id="@+id/ind_0"
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:alpha="0.2"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_breakfast"
+            app:layout_constraintBottom_toBottomOf="@id/more_details"
+            app:layout_constraintEnd_toStartOf="@id/ind_1"
+            app:layout_constraintTop_toTopOf="@id/more_details" />
+
+    <ImageView
+        android:id = "@+id/ind_1"
+        android:src = "@drawable/ic_lunch"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="0.2"
+        app:layout_constraintTop_toTopOf="@id/more_details"
+        app:layout_constraintBottom_toBottomOf="@id/more_details"
+        app:layout_constraintEnd_toStartOf="@id/ind_2"
+        />
+
+
+    <ImageView
+        android:id = "@+id/ind_2"
+        android:src = "@drawable/ic_snack"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:alpha="0.2"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/more_details"
+        app:layout_constraintBottom_toBottomOf="@id/more_details"
+        app:layout_constraintEnd_toStartOf="@id/ind_3"
+        />
+
+
+    <ImageView
+        android:id = "@+id/ind_3"
+        android:src = "@drawable/ic_snack_max"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:alpha="0.2"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/more_details"
+        app:layout_constraintBottom_toBottomOf="@id/more_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:id = "@+id/first_place"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            style="@style/block_thing"
+            android:layout_marginTop="0dp"
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="Завтрак"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/first_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/first_place"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/second_place"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            style="@style/block_thing"
+            android:layout_marginTop="0dp"
+            android:id="@+id/second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="Обед"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/second_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/second_place"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:id = "@+id/third_place"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            style="@style/block_thing"
+            android:layout_marginTop="0dp"
+            android:id="@+id/third_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="Полдник 10%"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/third_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/third_place"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fourth_place"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            style="@style/block_thing"
+            android:layout_marginTop="0dp"
+            android:id="@+id/fourth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="Полдник 15%"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/fourth_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button
+        style="@style/secondButton"
+        android:id = "@+id/bt_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourth_place"
+        android:text = "@string/bt_menu"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        style="@style/secondButton"
+        android:id = "@+id/bt_scedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourth_place"
+        android:text = "@string/bt_scedule"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#BEBEBE"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
+

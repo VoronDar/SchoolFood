@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Заявки на питание: Мурманск</string>
+    <string name="serverName">http://192.168.0.14:5000/</string>
+
+
+
+
+    <string name="s_t_your_name">Ваше имя</string>
+    <string name="s_t_your_region">Место проживания</string>
+    <string name="s_t_your_contacts">Контактные данные</string>
+    <string name="s_t_your_password">Введите пароль</string>
+    <string name="s_t_your_children">Зарегистрируйте детей</string>
+    <string name="s_t_their_name">Имя ребенка</string>
+    <string name="s_t_their_school">Место обучения ребенка</string>
+    <string name="s_t_their_code">Код класса</string>
+
+    <string name="s_d_your_name">Укажите, как нам Вас называть</string>
+    <string name="s_d_your_region">Укажите место Вашего проживания</string>
+    <string name="s_d_your_contacts">Введите Вашу электронную почту или номер телефона</string>
+    <string name="s_d_your_contacts_only">Введите Вашу электронную почту</string>
+    <string name="s_d_your_password">Придумайте надежный пароль</string>
+    <string name="s_d_your_children">Добавьте Ваших детей, обучающихся в школе</string>
+    <string name="s_d_their_name">Укажите имя и фамилию ребенка</string>
+    <string name="s_d_their_patronymic">Укажите отчество ребенка</string>
+    <string name="s_d_their_school">Школа и класс, в которых учится </string>
+    <string name="s_d_their_code">Укажите код, который передал Вам классный руководитель ребенка</string>
+
+    <string name="bt_next">Далее</string>
+    <string name="bt_sign_in">Войти</string>
+    <string name="bt_sign_up">Зарегистрироваться</string>
+    <string name="bt_delete_child">Удалить ребенка</string>
+    <string name="bt_add_child">Добавить ребенка</string>
+    <string name="bt_delete_child_little">Отменить</string>
+    <string name="bt_later">Не сейчас</string>
+
+    <string name="bt_accept">Подтвердить</string>
+    <string name="bt_change">Изменить</string>
+    <string name="bt_menu">Меню</string>
+    <string name="bt_scedule">Расписание</string>
+    <string name="bt_plan">План питания</string>
+    <string name="bt_profile">Профиль</string>
+    <string name="bt_task">Заявка</string>
+
+    <string name="warn_password">Пароли должны совпадать</string>
+    <string name="warn_name">Инициалы должны быть действительными</string>
+    <string name="warn_mail">Почта должна быть действительной</string>
+    <string name="warn_phone">Номер телефона должен быть действительным</string>
+    <string name="warn_data">должны быть действительными</string>
+    <string name="warn_school">Школа и класс должны быть действительными</string>
+    <string name="warn_enter">Почта или пароль введены неверно</string>
+
+
+    <string name="hint_name">Имя</string>
+    <string name="hint_second_name">Фамилия</string>
+    <string name="hint_patronymic">Отчество</string>
+    <string name="hint_mail">Почта</string>
+    <string name="hint_phone">Телефон</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_accept_password">Подтвердите пароль</string>
+    <string name="hint_region">Регион</string>
+    <string name="hint_city">Город</string>
+    <string name="hint_school">Школа</string>
+    <string name="hint_grade">Класс</string>
+    <string name="hint_letter">Буква</string>
+    <string name="hint_code">Код</string>
+
+
+    <string name="info_sign_out">Выйти из аккаунта</string>
+    <string name="bt_info_sign_out">Выйти</string>
+</resources>

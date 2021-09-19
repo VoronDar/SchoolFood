@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/bt_menu"
+        android:enabled="true"
+        android:title="@string/bt_menu"
+        android:icon="@drawable/ic_icon_menu" />
+    <item
+        android:id="@+id/scedule"
+        android:enabled="true"
+        android:title="@string/bt_scedule"
+        android:icon="@drawable/ic_icon_clock" />
+    <item
+        android:id="@+id/tasks"
+        android:enabled="true"
+        android:title="@string/bt_task"
+        android:icon="@drawable/ic_select" />
+    <item
+        android:id="@+id/bt_plan"
+        android:enabled="true"
+        android:title="План"
+        android:icon="@drawable/ic_icon_table" />
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:title="@string/bt_profile"
+        android:icon="@drawable/ic_icon_home" />
+</menu>

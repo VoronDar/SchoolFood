@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="2dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="32dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/block_title"
+            android:id="@+id/name"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="Завтрак"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            style="@style/block_thing"
+            android:id="@+id/first_place"
+            android:text="* Вкусная булочка"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            style="@style/block_thing"
+            android:id="@+id/second_place"
+            android:text="* Вкусная булочка"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            style="@style/block_thing"
+            android:id="@+id/third_place"
+            android:visibility="gone"
+            android:text="* Вкусная булочка"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            style="@style/block_thing"
+            android:id="@+id/fourth_place"
+            android:visibility="gone"
+            android:text="* Вкусная булочка"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            style="@style/block_thing"
+            android:id="@+id/fifth_place"
+            android:visibility="gone"
+            android:text="* Вкусная булочка"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            style="@style/block_thing"
+            android:id="@+id/six_place"
+            android:visibility="gone"
+            android:text="* Вкусная булочка"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            style="@style/block_thing"
+            android:id="@+id/sevens_place"
+            android:visibility="gone"
+            android:text="* Вкусная булочка"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_place"
+        android:background="#BEBEBE"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
+

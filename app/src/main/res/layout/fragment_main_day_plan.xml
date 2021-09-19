@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/school_everything"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id = "@+id/child"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#66E1E4FF"
+        app:contentPadding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/edit_text_settings"
+                android:layout_width="wrap_content"
+                android:hint="Алиса Сергеевна"
+                android:textSize="14dp"
+                android:textColor="#C429407A"
+                android:layout_marginStart="10dp"
+                android:padding = "5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id = "@+id/name"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:src = "@drawable/ic_arrow_drop_down_black_24dp"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id = "@+id/calendar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:elevation="0dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#CDD8FF"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardElevation="0dp"
+        app:contentPadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+            <View
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background= "@drawable/ic_icon_calendar"
+                />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        style = "@style/title_settings"
+        android:id="@+id/title"
+        android:text="Заявка на завтра"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:id = "@+id/first_place"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor = "#3B4473"
+            android:layout_gravity="center_vertical"
+            android:text="Завтрак"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/first_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_place"
+        android:background="#BEBEBE"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="1dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_place"
+        android:background="#BEBEBE"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="1dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_place"
+        android:background="#BEBEBE"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="1dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_place"
+        android:background="#BEBEBE"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/first_place"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/second_place"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:id="@+id/second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor = "#3B4473"
+            android:layout_gravity="center_vertical"
+            android:text="Обед"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/second_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/second_place"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:id = "@+id/third_place"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:id="@+id/third_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor = "#3B4473"
+            android:layout_gravity="center_vertical"
+            android:text="Полдник 10%"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/third_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/third_place"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fourth_place"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:id="@+id/fourth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor = "#3B4473"
+            android:layout_gravity="center_vertical"
+            android:text="Полдник 15%"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id = "@+id/fourth_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id = "@+id/payment"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:textColor = "#1E458F"
+        android:textAlignment="viewEnd"
+        android:layout_marginEnd="30dp"
+        android:fontFamily = "@font/heebo_regular"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt_menu"
+        android:text = "Расчетная плата: 400р"
+        />
+
+    <Button
+        style="@style/mainButton"
+        android:id = "@+id/buttonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text = "@string/bt_accept"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        style="@style/secondButton"
+        android:id = "@+id/buttonChange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text = "@string/bt_change"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        style="@style/secondButton"
+        android:id = "@+id/bt_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "@string/bt_menu"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <View
+        android:id="@+id/blocker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        android:background="@color/colorWhite"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id ="@+id/blockerText"
+        style="@style/title_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:textAlignment="center"
+        android:elevation="4dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text = "Вы не можете оформлять заявки на питание до тех пор, пока аккаунт вашего ребенка не подтвердит классный руководитель"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

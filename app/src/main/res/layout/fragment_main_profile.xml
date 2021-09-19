@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id = "@+id/school_everything"
+    android:nestedScrollingEnabled="false"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/block_title"
+            android:id="@+id/name"
+            android:layout_marginTop="30dp"
+            android:text="Пользователь:"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/block_thing"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:id="@+id/name_info"
+                android:text="Родитель:"
+                android:layout_marginStart="50dp"
+                />
+            <ImageView
+                android:id = "@+id/more_parent"
+                android:layout_width="27dp"
+                android:layout_weight="0"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src = "@drawable/button_more"
+                android:layout_height="27dp"/>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_info"
+        android:background="#BEBEBE"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="1dp"/>
+    <TextView
+        style="@style/block_title"
+        android:id="@+id/child"
+        android:layout_marginTop="30dp"
+        android:text="Дети:"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id = "@+id/recyclerView"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        />
+    </LinearLayout>
+    </ScrollView>
+

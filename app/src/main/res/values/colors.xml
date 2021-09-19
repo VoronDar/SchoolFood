@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F5F8FF</color>
+    <color name="colorPrimaryDark">#DAE0EE</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="strokeColor">#CC6DA8FF</color>
+    <color name="strokeButtonColor">#666DA8FF</color>
+    <color name="rippleColor">#3560A0</color>
+    <color name="buttonColor">#6496F6</color>
+    <color name="textBackround">#1CE1E4FF</color>
+    <color name="colorHint">#8029407A</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorMenuLabel">#B3000000</color>
+
+
+    <color name="todayCalendar">#E7E4FF</color>
+    <color name="todayCalendarStroke">#0027B0</color>
+    <color name="otherCalendarStroke">#CDD8FF</color>
+
+    <color name="textButtonOutlined">#426BBC</color>
+</resources>
