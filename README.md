@@ -25,9 +25,12 @@ You can decide what your children will eat. You need to select a day, fulfill a 
 
 
 ## Info
+
 ### Certificate
 <img src = "materials/сертификатШИР.png"/>
+
 ### More info
+
 - presentation - https://www.canva.com/design/DAEWZwPKaM4/GXRzvQKnigIiZXdvR_Ammw/view?utm_content=DAEWZwPKaM4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
 - app in google play - https://play.google.com/store/apps/details?id=com.astery.ccabp
 - passport - https://docs.google.com/document/d/1WLtADt9aK18OcfL_EQmEXc-OeRvGtziL/edit?usp=sharing&ouid=102428718605921677572&rtpof=true&sd=true
